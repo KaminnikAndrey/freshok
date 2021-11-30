@@ -1,0 +1,63 @@
+.benefits {
+  background-color: $silver-100;
+  padding: 50px 0 30px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  &__item {
+    max-width: 290px;
+    width: 100%;
+    color: $dark-500;
+    position: relative;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    padding-left: 70px;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: $fw-600;
+    margin-bottom: 5px;
+    color: $dark-900;
+  }
+
+  &__text {
+    font-weight: $fw-400;
+
+    &--small {
+      max-width: 190px;
+      // тут надо
+    }
+  }
+}
+
+@media (max-width: 1380px) {
+  .benefits {
+    &__item {
+      padding-left: 70px;
+      max-width: 300px;
+      margin-right: 40px;
+      &:not(:last-child) {
+        margin-bottom: 33px;
+      }
+    }
+
+    &__text {
+      font-weight: $fw-400;
+
+      &--small {
+        max-width: 290px;
+      }
+    }
+  }
+}

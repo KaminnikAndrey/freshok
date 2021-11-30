@@ -1,0 +1,168 @@
+.main-slider {
+  .slick__svg {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    fill: $dark-500;
+    background-color: rgba($white, 0.9);
+    border-radius: 10px;
+    padding: 14px 21px;
+    transition: background-color 0.3s ease-in-out, background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
+
+    &:focus {
+      box-shadow: 0 0 0 3px $green-900;
+    }
+
+    &:hover {
+      background-color: $green-200;
+    }
+
+    &:hover,
+    &:active {
+      fill: $green-900;
+    }
+  }
+
+  .slick-dots {
+    list-style: none;
+    display: flex;
+    width: 54px;
+    justify-content: space-between;
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .slick-dots button {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: $white;
+    border: 1px solid $silver-600;
+    font-size: 0;
+  }
+
+  .slick-active button {
+    background-color: $green-900;
+    border: none;
+    width: 12px;
+    height: 12px;
+  }
+
+  .slick__btn {
+    z-index: 10;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .slick__svg--right {
+    right: 50px;
+    transform: rotate(180deg) translateY(50%);
+  }
+
+  .slick__svg--left {
+    left: 50px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .slick-slide {
+    display: flex;
+  }
+
+  &__item {
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 102;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba($white, 0.8);
+    padding: 35px 19px 25px;
+    position: relative;
+  }
+
+  &__title,
+  &__subtitle {
+    font-weight: $fw-900;
+    font-family: $ruda;
+    font-size: 60px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    display: block;
+    max-width: 950px;
+    @include line-clamp(3);
+    letter-spacing: 0;
+  }
+
+  &__subtitle {
+    color: $red-900;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin-bottom: 35px;
+    @include line-clamp(5);
+  }
+}
+
+@media (max-width: 992px) {
+  .main-slider {
+    &__title,
+    &__subtitle {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .main-slider {
+    &__title,
+    &__subtitle {
+      font-size: 20px;
+      letter-spacing: 0;
+      font-weight: $fw-400;
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 12px 24px;
+      width: 152px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      margin-bottom: 15px;
+    }
+
+    &__content {
+      padding: 20px 15px 15px;
+    }
+
+    &__item {
+      min-height: 320px;
+    }
+
+    .slick-dots {
+      top: 285px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

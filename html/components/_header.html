@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Freshok | Главная страница</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <nav class="header__top-inner">
+          <ul class="header-info">
+            <li class="header-info__item">
+              <a class="header-info__link" href="#">
+                <svg class="icon icon__address-svg">
+                  <use xlink:href="images/spriteimages/address.svg#address"></use>
+                </svg>
+                <p>АДРЕС И ВРЕМЯ ДОСТАВКИ</p>
+              </a>
+            </li>
+            <li class="header-info__item">
+              <a class="header-info__link" href="tel:+907288365">
+                <svg class="icon icon__tel-svg">
+                  <use xlink:href="images/spriteimages/tel.svg#tel"></use>
+                </svg>
+                <p>ГОРЯЧАЯ ЛИНИЯ 24/7</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="header-about">
+            <li class="header-about__item">
+              <a class="header-about__link" href="#">ДОСТАВКА</a>
+            </li>
+            <li class="header-about__item">
+              <a class="header-about__link" href="#">О НАС</a>
+            </li>
+            <li class="header-about__item">
+              <a class="header-about__link" href="#">НОВОСТИ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header__content">
+      <div class="container header__container">
+        <nav class="header__content-inner">
+          <a class="logo header__logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="60">
+          </a>
+          <a class="logo header__logo-mobile" href="#">
+            <img class="logo__img" src="images/adaptive/logo.svg" alt="логотип" width="37" height="40">
+          </a>
+          <div class="header__catalog">
+            <span class="header__burger"></span>
+            <div class="header__products">
+              Каталог продуктов
+            </div>
+            <ul class="catalog">
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Овощи и фрукты
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Бакалея
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Молочные продукты
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Хлеб
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Мясо
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Колбаса
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Рыба
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Алкоголь
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Напитки
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Торты
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Мясо
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">
+                  Чай, кофе
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="search-form">
+            <label class="sr-only" for="search">Найти в магазине</label>
+            <input class="search-form__field" type="text" id="search" name="text" placeholder="Найти в магазине ..."
+              required>
+            <button class="btn--search btn" type="submit">ПОИСК </button>
+          </form>
+          <ul class="account-list">
+            <li class="account-list__item-mobile">
+              <button class="account-list__link-mobile--search" type="button">
+                <span class="sr-only">Окрыть поиск</span>
+              </button>
+            </li>
+            <li class="account-list__item">
+              <a class="account-list__link" href="#">
+                <span class="sr-only">Перейти в профиль</span>
+                <svg class="icon">
+                  <use xlink:href="images/spriteimages/user.svg#user"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="account-list__item">
+              <a class="account-list__link" href="#">
+                <span class="sr-only">Перейти в избранные</span>
+                <span class="account-list__number">12</span>
+                <svg class="icon account-list__svg">
+                  <use xlink:href="images/spriteimages/heart.svg#heart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="account-list__item">
+              <button class="account-list__link" type="button">
+                <span class="sr-only">Открыть корзину</span>
+                <span class="account-list__number account-list__number--cart">12</span>
+                <svg class="icon account-list__svg icon--cart">
+                  <use xlink:href="images/spriteimages/cart.svg#cart"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="account-list__item-mobile">
+              <button class="account-list__link-mobile" type="button">
+                <span class="sr-only">Открыть корзину</span>
+                <span class="account-list__number account-list__number--cart">12</span>
+                <svg class="icon account-list__svg icon--cart">
+                  <use xlink:href="images/spriteimages/cart.svg#cart"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header__top-mobile">
+      <nav class="menu">
+        <div class="header__top-mobile-left">
+          <button class="menu__btn" type="menu">
+            <span class="sr-only">
+              Открыть меню
+            </span>
+          </button>
+        </div>
+        <div class="header__top-mobile-right">
+          <ul class="header-info">
+            <li class="header-info__item">
+              <a class="header-info__link" href="#">
+                <svg class="icon icon__address-svg">
+                  <use xlink:href="images/spriteimages/address.svg#address"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-info__item">
+              <a class="header-info__link" href="tel:+907288365">
+                <svg class="icon icon__tel-svg">
+                  <use xlink:href="images/spriteimages/tel.svg#tel"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="header__conent-mobile">
+      <nav class="header-content-mobile__wrapper">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/adaptive/logo.svg" alt="логотип" width="37" height="40">
+        </a>
+        <ul class="account-list">
+          <li class="account-list__item">
+            <button class="account-list__link" type="button">
+              <span class="sr-only">Открыть поиск</span>
+              <svg class="icon icon--search">
+                <use xlink:href="images/spriteimages/search.svg#search"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="account-list__item">
+            <button class="account-list__link" type="button">
+              <span class="sr-only">Открыть корзину</span>
+              <span class="account-list__number account-list__number--cart">12</span>
+              <svg class="icon account-list__svg icon-mobile--cart">
+                <use xlink:href="images/spriteimages/cart.svg#cart"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__search">
+      <form class="search-form search-form-mobile">
+        <label class="sr-only" for="search">Я ищу ...</label>
+        <input class="search-form__field" type="text" id="search" name="text" placeholder="Я ищу ..." required>
+        <button class="btn--search btn" type="submit">ПОИСК </button>
+      </form>
+    </div>
+  </header>
+  <aside class="mobile-navigation">
+    <nav class="navigation">
+      <div class="mobile-navigation__top">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/adaptive/logo3.svg" alt="логотип" width="200" height="60">
+        </a>
+        <div class="close"></div>
+      </div>
+      <div class="navigation__user">
+        <a class="navigation__user-link" href="#">
+          <p class="navigation__user-login">Вход</p>
+          <p class="navigation__user-delimiter">|</p>
+          <p class="navigation__user-registration">Регстрация</p>
+        </a>
+      </div>
+      <a class="navigation__catalog" href="#">
+        <button class="navigation__catalog-btn"></button>
+        <p class="navigation__catalog-text">Каталог товаров</p>
+      </a>
+      <address class="navigation__address">
+        <ul class="navigation__address-list">
+          <li class="navigation__address-item">
+            <a class="navigation__address-link " href="tel:+7907288365">+7 907 288 365</a>
+          </li>
+          <li class="navigation__address-item">
+            <p class="navigation__address-text" href="#">Санкт-Петербург, Ул. Ленина, 1</p>
+          </li>
+          <li class="navigation__address-item">
+            <ul class="social ">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="sr-only">фейсбук</span>
+                  <svg class="icon social__svg">
+                    <use xlink:href="images/spriteimages/facebook.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="sr-only">ютуб</span>
+                  <svg class="icon social__svg">
+                    <use xlink:href="images/spriteimages/youtube.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="sr-only">телеграм</span>
+                  <svg class="icon social__svg">
+                    <use xlink:href="images/spriteimages/telegram.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="sr-only">инстаграм</span>
+                  <svg class="icon social__svg">
+                    <use xlink:href="images/spriteimages/instagram.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </address>
+      <ul class="navigation__info">
+        <li class="navigation__info-item">
+          <a class="navigation__info-link" href="#">Доставка</a>
+        </li>
+        <li class="navigation__info-item">
+          <a class="navigation__info-link" href="#">О нас</a>
+        </li>
+        <li class="navigation__info-item">
+          <a class="navigation__info-link" href="#">Новости</a>
+        </li>
+        <li class="navigation__info-item">
+          <a class="navigation__info-link" href="#">Контакты</a>
+        </li>
+        <li class="navigation__info-item">
+          <a class="navigation__info-link" href="#">Акции</a>
+        </li>
+        <li class="navigation__info-item">
+          <a class="navigation__info-link" href="#">Вакансии</a>
+        </li>
+        <li class="navigation__info-item">
+          <a class="navigation__info-link" href="#">Отзывы</a>
+        </li>
+        <li class="navigation__info-item">
+          <a class="navigation__info-link" href="#">Публичная оферта</a>
+        </li>
+      </ul>
+      </li>
+      </ul>
+    </nav>
+  </aside>
