@@ -82,12 +82,14 @@ $(function () {
 
   function cartMobileadd() {
     document.querySelector('.cart-mobile').classList.toggle('cart-mobile--active');
+    document.querySelector('.body').classList.add('body--active');
   }
 
   document.querySelector('.cart__close-mobile').addEventListener('click', cartMobileremove);
 
   function cartMobileremove() {
     document.querySelector('.cart-mobile').classList.remove('cart-mobile--active');
+    document.querySelector('.body').classList.remove('body--active');
   }
 
   document.querySelector('.header__products').addEventListener('click', catalogProducts);
@@ -108,14 +110,12 @@ $(function () {
   function menuadd() {
     document.querySelector('.mobile-navigation').classList.add('mobile-navigation--active');
     document.querySelector('.header__search').classList.remove('header__search--active');
-    document.querySelector('.body').classList.add('body--active');
   }
 
   document.querySelector('.close').addEventListener('click', menuremove);
 
   function menuremove() {
     document.querySelector('.mobile-navigation').classList.remove('mobile-navigation--active');
-    document.querySelector('.body').classList.remove('body--active');
   }
 
   var homeProductsEl1 = document.querySelector('[data-ref="homeProducts-1"]');
